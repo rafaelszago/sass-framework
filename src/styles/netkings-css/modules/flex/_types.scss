@@ -1,0 +1,20 @@
+$flex-alignment-types: (
+  'start',
+  'end',
+  'center',
+  'stretch',
+  'space-around',
+  'space-between',
+  'space-evenly'
+);
+
+$flex-alignment-content-types: (
+  'justify': 'justify-content',
+  'align': 'align-items'
+);
+
+$flex-alignment-item-types: (
+  'justify': 'justify-seld',
+  'align': 'align-self',
+  'place': 'place-self'
+);
