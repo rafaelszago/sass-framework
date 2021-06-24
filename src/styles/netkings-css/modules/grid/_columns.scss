@@ -1,0 +1,14 @@
+@mixin make-grid-columns($grid) {
+  $gutter: calc-gutter($grid);
+  $preffix: map-get($grid, 'preffix');
+  $columns: map-get($grid, 'columns');
+
+  @for $i from 1 through $columns {
+    &-#{$preffix}-#{$i} {
+      @include col-props($i, $columns, $gutter);
+    }
+    &-#{$preffix}-offset-#{$i} {
+      margin-left: calc-col-width($i, $columns);
+    }
+  }
+}
