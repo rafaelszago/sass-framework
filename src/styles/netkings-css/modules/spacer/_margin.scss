@@ -1,0 +1,12 @@
+@mixin make-margin($spacers, $sides) {
+  @each $name, $size in $spacers {
+    .m-#{$name} {
+      margin: calculate-size($size);
+    }
+    @each $side, $value in $sides {
+      .m#{$side}-#{$name} {
+        margin: make-sizes($side, calculate-size($size));
+      }
+    }
+  }
+}

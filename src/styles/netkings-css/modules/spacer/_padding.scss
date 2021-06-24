@@ -1,0 +1,12 @@
+@mixin make-padding($spacers, $sides) {
+  @each $name, $size in $spacers {
+    .p-#{$name} {
+      padding: calculate-size($size);
+    }
+    @each $side, $value in $sides {
+      .p#{$side}-#{$name} {
+        padding: make-sizes($side, calculate-size($size));
+      }
+    }
+  }
+}
