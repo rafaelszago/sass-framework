@@ -1,0 +1,10 @@
+@import './background';
+@import './border';
+@import './text';
+@import './types';
+
+@import '../../settings/colors';
+
+@include make-background-colors($colors);
+@include make-border-colors($colors);
+@include make-text-colors($colors);
