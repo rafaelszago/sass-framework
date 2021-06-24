@@ -1,14 +1,13 @@
 {
-  "name": "simple-landing-webpack",
+  "name": "sass-framework",
   "version": "1.0.0",
   "main": "src/app.js",
-  "license": "WTFPL",
   "author": {
     "name": "Rafael Zago",
     "email": "rafaelszago@gmail.com"
   },
   "repository": {
-    "url": "https://github.com/rafaelszago/simple-landing-webpack"
+    "url": "https://github.com/rafaelszago/sass-framework"
   },
   "scripts": {
     "lint": "eslint src/**/*.{js,html}",
