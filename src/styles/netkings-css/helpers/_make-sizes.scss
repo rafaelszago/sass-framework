@@ -1,0 +1,15 @@
+@function make-sizes($side, $value) {
+  @if ($side == 't') {
+    @return $value 0 0 0;
+  } @else if ($side == 'b') {
+    @return 0 0 $value 0;
+  } @else if ($side == 'r') {
+    @return 0 $value 0 0;
+  } @else if ($side == 'l') {
+    @return 0 0 0 $value;
+  } @else if ($side == 'y') {
+    @return $value 0;
+  } @else if ($side == 'x') {
+    @return 0 $value;
+  }
+}
