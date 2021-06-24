@@ -4,13 +4,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>✨ Simple Landing Webpack</title>
+  <title>✨ SASS Framework - v1.0</title>
 </head>
 <body>
   <div id="app">
-    <div>
-      <h1>✨ Simple Landing Webpack</h1>
-      <p>Just another webpack boilerplate</p>
+    <div class="container-fluid bg-secondary p-xxl">
+      <div class="col-lg-12">
+        <h1 class="text-white">✨ SASS Framework - v1.0</h1>
+        <p class="text-white">Just another SASS Framework</p>
+      </div>
+    </div>
+    <div class="container py-lg">
+      <div class="col-lg-12">
+        <h2>Grid</h2>
+      </div>
+    </div>
+    <div class="container flex" style="height: 200px;">
+      <div class="col-sm-4 col-lg-4 place-center">
+        <div class="bg-secondary border-black border-b-2 p-xxl">
+          <p class="text-white">.col-lg-4</p>
+        </div>
+      </div><div class="col-lg-4">
+        <div class="bg-secondary p-xxl">
+          <p class="text-white">.col-lg-4</p>
+        </div>
+      </div><div class="col-lg-4">
+        <div class="bg-secondary p-xxl">
+          <p class="text-white">.col-lg-4</p>
+        </div>
+      </div>
+    </div>
+    <div class="container py-lg">
+      <div class="col-lg-12">
+        <h2>Alignment</h2>
+      </div>
+    </div>
+    <div class="container justify-center align-center" style="height:180px;">
+      <div class="col-lg-6 bg-secondary border-2 border-black p-xxl">
+        <p class="text-white">.justify-center .align-center</p>
+      </div>
     </div>
   </div>
 </body>
