@@ -1,0 +1,9 @@
+@mixin make-rules($types, $values) {
+  @each $name, $rule in $types {
+    @each $value in $values {
+      &.#{$name}-#{$value} {
+        #{$rule}: #{$value};
+      }
+    }
+  }
+}
