@@ -1,0 +1,5 @@
+.card {
+  @extend .border-solid;
+  @extend .border-sm;
+  @extend .p-xl;
+}
