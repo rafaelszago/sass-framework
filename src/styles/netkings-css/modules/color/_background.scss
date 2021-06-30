@@ -1,7 +1,0 @@
-@mixin make-background-colors($colors) {
-  @each $name, $color in $colors {
-    .bg-#{$name} {
-      background-color: $color;
-    }
-  }
-}

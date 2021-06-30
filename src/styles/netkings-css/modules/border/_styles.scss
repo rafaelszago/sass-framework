@@ -1,7 +1,0 @@
-@mixin make-border-styles($styles) {
-  @each $style in $styles {
-    .border-#{$style} {
-      border-style: #{$style};
-    }
-  }
-}

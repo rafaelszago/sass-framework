@@ -1,9 +1,0 @@
-@import './calculate-size';
-@import './padding';
-@import './margin';
-
-@import '../../settings/sides';
-@import '../../settings/spacer';
-
-@include make-padding($spacer-sizes, $sides);
-@include make-margin($spacer-sizes, $sides);

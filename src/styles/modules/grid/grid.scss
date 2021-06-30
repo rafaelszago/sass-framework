@@ -1,0 +1,31 @@
+@use 'sass:map' as *;
+@use 'helpers' as *;
+@use 'settings' as *;
+@use '../../helpers/map-deep-get' as *;
+
+.container {
+  @extend .flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  max-width: map-deep-get($grid, 'xxl', 'container');
+
+  .col {
+    @include make-columns(map-get($grid, 'xs'));
+
+    @each $key in map-keys($grid) {
+      $breakpoint: map-deep-get($grid, $key, 'breakpoint');
+
+      @include make-breakpoint($breakpoint) {
+        width: map-deep-get($grid, $key, 'container');
+        @include make-columns(map-get($grid, $key));
+      }
+    }
+  }
+
+  &-fluid {
+    width: 100%;
+  }
+}

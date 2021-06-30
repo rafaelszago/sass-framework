@@ -1,0 +1,33 @@
+@use 'sass:map' as *;
+@use '../../helpers/make-sizes-sides' as *;
+
+$sizes: (
+  'xxs': 0.5,
+  'xs': 1,
+  'sm': 2,
+  'md': 3,
+  'lg': 4,
+  'xl': 5,
+  'xxl': 6
+);
+
+$base: 8px;
+
+$spacer-values: ();
+
+@each $name, $size in $sizes {
+  $val: make-sizes-sides($name, $size * $base);
+  $spacer-values: merge($spacer-values, $val);
+}
+
+$padding: (
+  prefix: '.p',
+  property: 'padding',
+  values: $spacer-values
+);
+
+$margin: (
+  prefix: '.m',
+  property: 'margin',
+  values: $spacer-values
+);

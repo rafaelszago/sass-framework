@@ -1,0 +1,10 @@
+@use 'sass:map' as *;
+
+@function merge-many($maps...) {
+  $collection: ();
+
+  @each $map in $maps {
+    $collection: merge($collection, $map);
+  }
+  @return $collection;
+}

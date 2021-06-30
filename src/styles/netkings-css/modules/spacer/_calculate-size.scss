@@ -1,3 +1,0 @@
-@function calculate-size($size, $pixel-factor: 8px) {
-  @return $size * $pixel-factor;
-}

@@ -1,0 +1,74 @@
+$flex-direction: (
+  prefix: '&.flex',
+  property: 'flex-direction',
+  values: (
+    'row',
+    'row-reverse',
+    'column',
+    'column-reverse'
+  )
+);
+
+$flex-wrap: (
+  prefix: '&.flex',
+  property: 'flex-wrap',
+  values: (
+    'nowrap',
+    'wrap',
+    'wrap-reverse'
+  )
+);
+
+$justify-content: (
+  prefix: '&.content',
+  property: 'justify-content',
+  values: (
+    'flex-start': 'flex-start',
+    'flex-end': 'flex-end',
+    'center': 'center',
+    'between': 'space-between',
+    'around': 'space-around',
+    'envenly': 'space-evenly',
+    'start': 'start',
+    'end': 'end',
+    'left': 'left',
+    'right': 'right'
+  )
+);
+
+$align-items: (
+  prefix: '&.items',
+  property: 'align-items',
+  values: (
+    'stretch',
+    'flex-start',
+    'flex-end',
+    'center',
+    'baseline',
+    'first baseline',
+    'last baseline',
+    'start',
+    'end',
+    'self-start',
+    'self-end'
+  )
+);
+
+$align-content: (
+  prefix: '&.align',
+  property: 'align-content',
+  vulues: (
+    'flex-start',
+    'flex-end',
+    'center',
+    'space-between',
+    'space-around',
+    'space-evenly',
+    'stretch',
+    'start',
+    'end',
+    'baseline',
+    'first baseline',
+    'last baseline'
+  )
+);

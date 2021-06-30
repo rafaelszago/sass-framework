@@ -1,6 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+/*!
+*
+* SASS Framework
+* v1.0
+*
+* Author: Rafael Zago
+* Email: rafaelszago@gmail.com
+*
+*/
 
-@import './netkings-css/index.scss';
+@import './modules/reset/reset.scss';
+@import './modules/flex/flex.scss';
+@import './modules/grid/grid.scss';
+@import './modules/border/border.scss';
+@import './modules/spacer/spacer.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 body {
   font-family: 'Montserrat', sans-serif;

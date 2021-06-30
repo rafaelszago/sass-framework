@@ -1,0 +1,9 @@
+@use '../../helpers/make-classes' as *;
+@use 'settings' as *;
+
+@include make-classes(
+  $options: (
+    $padding,
+    $margin
+  )
+);

@@ -1,0 +1,14 @@
+@use '../../helpers/make-sizes-sides' as *;
+
+@function make-spacer-values($sizes, $base) {
+  $spacer-values: ();
+
+  @each $name, $size in $sizes {
+    $spacer-values: merge(
+      $spacer-values,
+      make-sizes-sides($name, $size * $base)
+    );
+  }
+
+  @return $spacer-values;
+}

@@ -1,0 +1,17 @@
+@use 'sass:map' as *;
+@use 'make-side-value' as *;
+
+$sides: ('t', 'b', 'r', 'l', 'y', 'x');
+
+@function make-sizes-sides($suffix, $value) {
+  $result: ();
+
+  @each $side in $sides {
+    $side-val: (
+      '#{$side}-#{$suffix}': make-side-value($side, $value)
+    );
+    $result: merge($result, $side-val);
+  }
+
+  @return $result;
+}

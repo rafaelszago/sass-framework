@@ -1,8 +1,0 @@
-@import '../../settings/borders';
-@import '../../settings/sides';
-
-@import './sizes';
-@import './styles';
-
-@include make-border-styles($border-style-types);
-@include make-border-sizes($border-size-types, $sides);

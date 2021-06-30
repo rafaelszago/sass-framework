@@ -1,0 +1,16 @@
+@use 'settings' as *;
+@use '../../helpers/make-classes' as *;
+
+.flex {
+  display: flex;
+
+  @include make-classes(
+    $options: (
+      $flex-direction,
+      $flex-wrap,
+      $justify-content,
+      $align-items,
+      $align-content
+    )
+  );
+}

@@ -1,4 +1,4 @@
-@function make-sizes($side, $value) {
+@function make-side-value($side, $value) {
   @if ($side == 't') {
     @return $value 0 0 0;
   } @else if ($side == 'b') {

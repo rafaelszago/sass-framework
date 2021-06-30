@@ -1,0 +1,23 @@
+@use '../../helpers/make-sizes-sides' as *;
+@use '../../helpers/merge-many' as *;
+
+$border-style: (
+  prefix: '.border',
+  property: 'border-style',
+  values: (
+    'dotted',
+    'solid',
+    'dashed'
+  )
+);
+
+$border-width: (
+  prefix: '.border',
+  property: 'border-width',
+  values:
+    merge-many(
+      make-sizes-sides('sm', 1px),
+      make-sizes-sides('md', 2px),
+      make-sizes-sides('lg', 3px)
+    )
+);

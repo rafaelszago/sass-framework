@@ -1,8 +1,0 @@
-@mixin make-border-colors($colors) {
-  @each $name, $color in $colors {
-    .border-#{$name} {
-      border-style: solid;
-      border-color: $color;
-    }
-  }
-}

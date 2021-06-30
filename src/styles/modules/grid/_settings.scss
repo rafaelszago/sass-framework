@@ -1,0 +1,62 @@
+$grid: (
+  xxl: (
+    prefix: 'xxl',
+    columns: 12,
+    margin: 32px,
+    gutter: 20px,
+    container: 1320px,
+    breakpoint: (
+      min: 1400px
+    )
+  ),
+  xl: (
+    prefix: 'xl',
+    columns: 12,
+    margin: 32px,
+    gutter: 20px,
+    container: 1140px,
+    breakpoint: (
+      min: 1200px
+    )
+  ),
+  lg: (
+    prefix: 'lg',
+    columns: 12,
+    margin: 32px,
+    gutter: 20px,
+    container: 960px,
+    breakpoint: (
+      min: 992px
+    )
+  ),
+  md: (
+    prefix: 'md',
+    columns: 12,
+    margin: 32px,
+    gutter: 20px,
+    container: 720px,
+    breakpoint: (
+      min: 768px
+    )
+  ),
+  sm: (
+    prefix: 'sm',
+    columns: 12,
+    margin: 32px,
+    gutter: 20px,
+    container: 540px,
+    breakpoint: (
+      min: 576px
+    )
+  ),
+  xs: (
+    prefix: false,
+    columns: 12,
+    margin: 32px,
+    gutter: 20px,
+    container: 'auto',
+    breakpoint: (
+      max: 576px
+    )
+  )
+);

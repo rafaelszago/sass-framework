@@ -1,7 +1,0 @@
-@mixin make-text-colors($colors) {
-  @each $name, $color in $colors {
-    .text-#{$name} {
-      color: $color;
-    }
-  }
-}
