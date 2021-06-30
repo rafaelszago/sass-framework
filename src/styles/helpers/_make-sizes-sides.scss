@@ -3,12 +3,19 @@
 
 $sides: ('t', 'b', 'r', 'l', 'y', 'x');
 
-@function make-sizes-sides($suffix, $value) {
+@function make-sizes-sides($sufix, $value) {
   $result: ();
+
+  $result: merge(
+    $result,
+    (
+      '#{$sufix}': $value
+    )
+  );
 
   @each $side in $sides {
     $side-val: (
-      '#{$side}-#{$suffix}': make-side-value($side, $value)
+      '#{$side}-#{$sufix}': make-side-value($side, $value)
     );
     $result: merge($result, $side-val);
   }
