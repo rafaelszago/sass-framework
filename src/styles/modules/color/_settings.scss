@@ -1,0 +1,37 @@
+@use 'sass:map' as *;
+@use 'helpers' as *;
+
+$theme-colors: (
+  'primary': get-color('indigo'),
+  'secondary': get-color('blue-gray'),
+  'dark': get-color('blue-gray', 900),
+  'light': get-color('blue-gray', 50),
+  'danger': get-color('red'),
+  'warning': get-color('amber'),
+  'info': get-color('light-blue'),
+  'success': get-color('green'),
+  'white': #fff,
+  'black': #000
+);
+
+$shades: (50, 100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+$color-values: merge(make-color-shades($shades), $theme-colors);
+
+$color-bg: (
+  prefix: '.bg',
+  property: 'background-color',
+  values: $color-values
+);
+
+$color-type: (
+  prefix: '.text',
+  property: 'color',
+  values: $color-values
+);
+
+$color-border: (
+  prefix: '.border',
+  property: 'border-color',
+  values: $color-values
+);

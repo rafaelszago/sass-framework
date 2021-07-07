@@ -1,0 +1,12 @@
+@use '../../helpers/make-classes' as *;
+@use 'settings' as *;
+
+@include make-classes(
+  $options: (
+    $type-align,
+    $type-weight,
+    $type-stretch,
+    $type-transform,
+    $type-size
+  )
+);

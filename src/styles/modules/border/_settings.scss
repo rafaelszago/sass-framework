@@ -21,3 +21,14 @@ $border-width: (
       make-sizes-sides('lg', 3px)
     )
 );
+
+$border-radius: (
+  prefix: '.rounded',
+  property: 'border-radius',
+  values:
+    merge-many(
+      make-sizes-sides('sm', 8px),
+      make-sizes-sides('md', 16px),
+      make-sizes-sides('lg', 32px)
+    )
+);

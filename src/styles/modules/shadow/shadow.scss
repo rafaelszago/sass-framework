@@ -1,0 +1,9 @@
+@use 'settings' as *;
+@use '../../helpers/make-classes' as *;
+
+@include make-classes(
+  $options: (
+    $shadow-box,
+    $shadow-text
+  )
+);

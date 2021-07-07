@@ -1,0 +1,76 @@
+@use 'helpers' as *;
+
+$-sizes: (
+  'xs': 0.5,
+  'sm': 0.75,
+  'md': 1,
+  'lg': 1.5,
+  'xl': 2,
+  'xxl': 3,
+  '2xl': 4,
+  '3xl': 6
+);
+
+$-options: (
+  base-size: 1rem,
+  base-factor: 1.333,
+  base-height: 1.25rem
+);
+
+$type-align: (
+  prefix: '.text',
+  property: 'text-align',
+  values: (
+    'center',
+    'left',
+    'right'
+  )
+);
+
+$type-weight: (
+  prefix: '.font',
+  property: 'font-weight',
+  values: (
+    'light': 300,
+    'normal': 400,
+    'bold': 800
+  )
+);
+
+$type-weight: (
+  prefix: '.font',
+  property: 'font-weight',
+  values: (
+    'light': 300,
+    'normal': 400,
+    'semi-bold': 500,
+    'bold': 700
+  )
+);
+
+$type-size: (
+  prefix: '.font',
+  property: 'font-size',
+  values: generate-sizes($-sizes, $-options)
+);
+
+$type-stretch: (
+  prefix: '.font',
+  property: 'letter-spacing',
+  values: (
+    'ultra-condensed': -0.01rem,
+    'ultra-expanded': 2rem
+  )
+);
+
+$type-transform: (
+  prefix: '.text',
+  property: 'text-transform',
+  values: (
+    'none',
+    'capitalize',
+    'uppercase',
+    'lowercase',
+    'full-width'
+  )
+);

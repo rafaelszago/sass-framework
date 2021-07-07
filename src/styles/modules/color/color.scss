@@ -3,12 +3,8 @@
 
 @include make-classes(
   $options: (
-    $border-style,
-    $border-width,
-    $border-radius
+    $color-bg,
+    $color-type,
+    $color-border
   )
 );
-
-div[class*='border-'] {
-  border-style: solid;
-}

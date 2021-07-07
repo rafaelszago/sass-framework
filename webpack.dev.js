@@ -27,12 +27,8 @@ module.exports = merge(common, {
         use: [
           'style-loader',
           'css-loader',
-          {
-            loader: 'sass-loader',
-            options: {
-              implementation: require('sass')
-            }
-          }
+          'sass-loader',
+          'postcss-loader'
         ]
       }
     ]

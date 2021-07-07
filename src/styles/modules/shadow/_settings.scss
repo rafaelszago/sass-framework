@@ -1,0 +1,38 @@
+@use 'sass:map' as *;
+@use '../color/helpers' as color;
+
+$sizes: (
+  'xxs': 0.5,
+  'xs': 1,
+  'sm': 2,
+  'md': 3,
+  'lg': 4,
+  'xl': 5,
+  'xxl': 6
+);
+
+$base-color: color.get-color('blue-gray', 900);
+$base-size: 8px;
+
+$shadow-values: ();
+
+@each $name, $value in $sizes {
+  $color: rgba($base-color, 0.3);
+  $blur: $value * $base-size;
+  $shadow-map: (
+    '#{$name}': '0 0 #{$blur} #{$color}'
+  );
+  $shadow-values: merge($shadow-values, $shadow-map);
+}
+
+$shadow-box: (
+  prefix: '.shadow',
+  property: 'box-shadow',
+  values: $shadow-values
+);
+
+$shadow-text: (
+  prefix: '.text-shadow',
+  property: 'text-shadow',
+  values: $shadow-values
+);

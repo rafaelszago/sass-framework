@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  @extend .bg-gray-50;
+  @extend .text-blue-gray-900;
+}
+
 .card {
-  @extend .border-solid;
-  @extend .border-sm;
+  @extend .shadow-xs;
+  @extend .bg-white;
+  @extend .rounded-sm;
   @extend .p-xl;
+}
+
+.alert {
+  @extend .p-sm;
+  @extend .text-white;
+  @extend .rounded-sm;
+  @extend .shadow-xxs;
+  @extend .flex;
+  @extend .content-between;
+}
+
+xmp {
+  @extend .bg-blue-gray-200;
+  @extend .rounded-sm;
+  @extend .text-blue-gray-900;
+  @extend .border-sm;
+  @extend .border-solid;
+  @extend .border-blue-gray-400;
+  @extend .p-xs;
+  font-family: 'Ubuntu Mono', monospace;
 }

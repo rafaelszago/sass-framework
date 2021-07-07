@@ -1,0 +1,20 @@
+@use 'sass:map' as *;
+
+@function font-size($value, $factor, $size) {
+  @return $value * $factor * $size;
+}
+
+@function generate-sizes($sizes, $options) {
+  $base-size: map-get($options, 'base-size');
+  $base-factor: map-get($options, 'base-factor');
+  $base-height: map-get($options, 'base-height');
+
+  $size-values: ();
+
+  @each $name, $size in $sizes {
+    $value: (#{$name}: font-size($size, $base-factor, $base-height));
+    $size-values: merge($size-values, $value);
+  }
+
+  @return $size-values;
+}
